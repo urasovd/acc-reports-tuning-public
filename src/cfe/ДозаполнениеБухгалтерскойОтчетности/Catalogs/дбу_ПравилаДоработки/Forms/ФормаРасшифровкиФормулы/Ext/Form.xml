@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<SaveWindowSettings>false</SaveWindowSettings>
+	<AutoURL>false</AutoURL>
+	<Customizable>false</Customizable>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаОткрытьТиповуюРасшифровку" id="20">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.ОткрытьТиповуюРасшифровку</CommandName>
+				<ExtendedTooltip name="ФормаОткрытьТиповуюРасшифровкуРасширеннаяПодсказка" id="21"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="НаименованиеПравила" id="1">
+			<DataPath>НаименованиеПравила</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<HeaderHorizontalAlign>Auto</HeaderHorizontalAlign>
+			<ShowInFooter>false</ShowInFooter>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<AutoMaxHeight>false</AutoMaxHeight>
+			<Wrap>false</Wrap>
+			<ContextMenu name="НаименованиеПравилаКонтекстноеМеню" id="22"/>
+			<ExtendedTooltip name="НаименованиеПравилаРасширеннаяПодсказка" id="23"/>
+		</InputField>
+		<InputField name="Формула" id="2">
+			<DataPath>Формула</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<HeaderHorizontalAlign>Auto</HeaderHorizontalAlign>
+			<ShowInFooter>false</ShowInFooter>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<AutoMaxHeight>false</AutoMaxHeight>
+			<Wrap>false</Wrap>
+			<ContextMenu name="ФормулаКонтекстноеМеню" id="24"/>
+			<ExtendedTooltip name="ФормулаРасширеннаяПодсказка" id="25"/>
+		</InputField>
+		<InputField name="Итог" id="3">
+			<DataPath>Итог</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<HeaderHorizontalAlign>Auto</HeaderHorizontalAlign>
+			<ShowInFooter>false</ShowInFooter>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<AutoMaxHeight>false</AutoMaxHeight>
+			<Wrap>false</Wrap>
+			<ContextMenu name="ИтогКонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="ИтогРасширеннаяПодсказка" id="27"/>
+		</InputField>
+		<Table name="Операнды" id="10">
+			<Representation>List</Representation>
+			<TitleLocation>Top</TitleLocation>
+			<ChangeRowSet>false</ChangeRowSet>
+			<ChangeRowOrder>false</ChangeRowOrder>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<AutoMaxHeight>false</AutoMaxHeight>
+			<AutoMaxRowsCount>false</AutoMaxRowsCount>
+			<SelectionMode>SingleRow</SelectionMode>
+			<Header>false</Header>
+			<HeaderHeight>0</HeaderHeight>
+			<FooterHeight>0</FooterHeight>
+			<HorizontalScrollBar>DontUse</HorizontalScrollBar>
+			<VerticalScrollBar>DontUse</VerticalScrollBar>
+			<HorizontalLines>false</HorizontalLines>
+			<VerticalLines>false</VerticalLines>
+			<SearchOnInput>Use</SearchOnInput>
+			<InitialListView>Beginning</InitialListView>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Операнды</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ОперандыКонтекстноеМеню" id="28"/>
+			<AutoCommandBar name="ОперандыКоманднаяПанель" id="16"/>
+			<ExtendedTooltip name="ОперандыРасширеннаяПодсказка" id="29"/>
+			<SearchStringAddition name="ОперандыСтрокаПоиска" id="30">
+				<AdditionSource>
+					<Item>Операнды</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ОперандыСтрокаПоискаКонтекстноеМеню" id="31"/>
+				<ExtendedTooltip name="ОперандыСтрокаПоискаРасширеннаяПодсказка" id="32"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ОперандыСостояниеПросмотра" id="33">
+				<AdditionSource>
+					<Item>Операнды</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ОперандыСостояниеПросмотраКонтекстноеМеню" id="34"/>
+				<ExtendedTooltip name="ОперандыСостояниеПросмотраРасширеннаяПодсказка" id="35"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ОперандыУправлениеПоиском" id="36">
+				<AdditionSource>
+					<Item>Операнды</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ОперандыУправлениеПоискомКонтекстноеМеню" id="37"/>
+				<ExtendedTooltip name="ОперандыУправлениеПоискомРасширеннаяПодсказка" id="38"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">ОперандыВыбор</Event>
+			</Events>
+			<ChildItems>
+				<InputField name="ОперандыИдентификатор" id="11">
+					<DataPath>Операнды.Идентификатор</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<HeaderHorizontalAlign>Auto</HeaderHorizontalAlign>
+					<ShowInFooter>false</ShowInFooter>
+					<Width>6</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<AutoMaxHeight>false</AutoMaxHeight>
+					<Wrap>false</Wrap>
+					<ContextMenu name="ОперандыИдентификаторКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="ОперандыИдентификаторРасширеннаяПодсказка" id="40"/>
+				</InputField>
+				<InputField name="ОперандыНаименованиеСлагаемого" id="12">
+					<DataPath>Операнды.НаименованиеСлагаемого</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<HeaderHorizontalAlign>Auto</HeaderHorizontalAlign>
+					<ShowInFooter>false</ShowInFooter>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<AutoMaxHeight>false</AutoMaxHeight>
+					<Wrap>false</Wrap>
+					<ContextMenu name="ОперандыНаименованиеСлагаемогоКонтекстноеМеню" id="41"/>
+					<ExtendedTooltip name="ОперандыНаименованиеСлагаемогоРасширеннаяПодсказка" id="42"/>
+				</InputField>
+				<InputField name="ОперандыСумма" id="13">
+					<DataPath>Операнды.Сумма</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<HeaderHorizontalAlign>Auto</HeaderHorizontalAlign>
+					<ShowInFooter>false</ShowInFooter>
+					<Width>12</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<AutoMaxHeight>false</AutoMaxHeight>
+					<Wrap>false</Wrap>
+					<ContextMenu name="ОперандыСуммаКонтекстноеМеню" id="43"/>
+					<ExtendedTooltip name="ОперандыСуммаРасширеннаяПодсказка" id="44"/>
+				</InputField>
+				<InputField name="ОперандыНомерСтроки" id="14">
+					<DataPath>Операнды.НомерСтроки</DataPath>
+					<Visible>false</Visible>
+					<ReadOnly>true</ReadOnly>
+					<HeaderHorizontalAlign>Auto</HeaderHorizontalAlign>
+					<ShowInFooter>false</ShowInFooter>
+					<ContextMenu name="ОперандыНомерСтрокиКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="ОперандыНомерСтрокиРасширеннаяПодсказка" id="46"/>
+				</InputField>
+				<CheckBoxField name="ОперандыДоступнаРасшифровка" id="15">
+					<DataPath>Операнды.ДоступнаРасшифровка</DataPath>
+					<Visible>false</Visible>
+					<ReadOnly>true</ReadOnly>
+					<HeaderHorizontalAlign>Auto</HeaderHorizontalAlign>
+					<ShowInFooter>false</ShowInFooter>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ОперандыДоступнаРасшифровкаКонтекстноеМеню" id="47"/>
+					<ExtendedTooltip name="ОперандыДоступнаРасшифровкаРасширеннаяПодсказка" id="48"/>
+				</CheckBoxField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="НаименованиеПравила" id="101">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Правило</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Формула" id="102">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Формула</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Итог" id="103">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Результат формулы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресПараметровРасшифровки" id="104">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Операнды" id="110">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Операнды формулы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="НомерСтроки" id="111">
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>0</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Идентификатор" id="112">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Операнд</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>10</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="НаименованиеСлагаемого" id="113">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Описание</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Сумма" id="114">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сумма</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДоступнаРасшифровка" id="115">
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОткрытьТиповуюРасшифровку" id="201">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть расшифровку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть типовой отчёт по выбранному операнду (ОСВ, анализ счёта…)</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьТиповуюРасшифровку</Action>
+		</Command>
+	</Commands>
+</Form>

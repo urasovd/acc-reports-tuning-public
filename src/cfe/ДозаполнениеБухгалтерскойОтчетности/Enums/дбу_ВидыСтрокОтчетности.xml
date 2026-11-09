@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.2/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Enum uuid="7c1a2e53-5d1b-4c24-9f2d-1e5a8b6c3d40">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.дбу_ВидыСтрокОтчетности" category="Ref">
+				<xr:TypeId>8d2b3f64-6e2c-4d35-a03e-2f6b9c7d4e51</xr:TypeId>
+				<xr:ValueId>9e3c4f75-7f3d-4e46-b14f-3f7cad8e5f62</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.дбу_ВидыСтрокОтчетности" category="Manager">
+				<xr:TypeId>a04d5f86-8f4e-4f57-c25f-4f8dbe9f6073</xr:TypeId>
+				<xr:ValueId>b05e6f97-9f5f-4068-d36f-5f9ecf0a7184</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.дбу_ВидыСтрокОтчетности" category="List">
+				<xr:TypeId>c16f7a08-a06f-4179-e47f-6a0fdb1c8295</xr:TypeId>
+				<xr:ValueId>d27f8b19-b17f-428a-f58f-7b0fec2d9306</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>дбу_ВидыСтрокОтчетности</Name>
+			<Synonym><v8:item><v8:lang>ru</v8:lang><v8:content>Виды строк отчетности</v8:content></v8:item></Synonym>
+			<Comment>Семантический вид адресуемой строки отчётности. Позиционные индексы не являются частью адреса.</Comment>
+			<UseStandardCommands>false</UseStandardCommands>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="e38f9c20-c28f-439b-a69c-8c0fe12d0417"><Properties><Name>Стандартная</Name><Synonym><v8:item><v8:lang>ru</v8:lang><v8:content>Стандартная строка</v8:content></v8:item></Synonym><Comment/></Properties></EnumValue>
+			<EnumValue uuid="f49a0d31-d39a-44ac-b70d-9d10f23e1528"><Properties><Name>ПрямаяРасшифровка</Name><Synonym><v8:item><v8:lang>ru</v8:lang><v8:content>Прямая расшифровка</v8:content></v8:item></Synonym><Comment/></Properties></EnumValue>
+			<EnumValue uuid="a50b1e42-e40b-45bd-c81e-0e21f34f2639"><Properties><Name>Вписанная</Name><Synonym><v8:item><v8:lang>ru</v8:lang><v8:content>Вписанная строка</v8:content></v8:item></Synonym><Comment/></Properties></EnumValue>
+			<EnumValue uuid="b61c2f53-f51c-46ce-d92f-1f32a45f3740"><Properties><Name>ВложеннаяРасшифровка</Name><Synonym><v8:item><v8:lang>ru</v8:lang><v8:content>Вложенная расшифровка</v8:content></v8:item></Synonym><Comment/></Properties></EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

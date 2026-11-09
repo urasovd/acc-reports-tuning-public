@@ -1,0 +1,14 @@
+# Local connection settings and secrets
+env.json
+*.local.json
+
+# Infobases and build output
+*.1CD
+*.cfl
+*.cfe
+build/
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
